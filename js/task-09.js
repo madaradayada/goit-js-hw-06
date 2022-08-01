@@ -10,7 +10,8 @@ const bodyEl = document.querySelector("body");
 changeColorButton.addEventListener('click', onCangeColorButton);
 
 function onCangeColorButton(event) {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  colorValue.textContent = getRandomHexColor();
-  console.log(getRandomHexColor());
+  let color = getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
+  colorValue.textContent = color;
+  console.log(color);
 }
